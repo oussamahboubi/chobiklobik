@@ -1,0 +1,35 @@
+
+<h3>Appuyez sur la roue pour estimer la durée restante pour terminer le projet Medly!</h3>
+<ngx-wheel
+  #wheel
+  width='400'
+  height='400'
+  spinDuration='8'
+  [items]='items'
+  [innerRadius]='20'
+  [spinAmount]='10'
+  [textOrientation]='textOrientation'
+  [textAlignment]='textAlignment'
+  pointerStrokeColor='black'
+  pointerFillColor='gold'
+  [idToLandOn]='idToLandOn'
+  (onSpinStart)='before()'
+  (onSpinComplete)='after()'
+></ngx-wheel>
+<div>
+  <button class="reset" (click)="reset()">Recommencer</button>
+</div>
+<!--<div class="buttons">
+  <button (click)="spin(0)">1 Mois</button>
+  <button (click)="spin(1)">2 Mois</button>
+  <button (click)="spin(2)">3 Mois</button>
+  <button (click)="spin(3)">6 Mois</button>
+  <button (click)="spin(4)">9 Mois</button>
+  <button (click)="spin(5)">1 Année</button>
+  <button (click)="spin(6)">1 Année et demi</button>
+  <button (click)="spin(7)">2 Ans</button>
+  <button (click)="spin(8)">2 Ans et demi</button>
+  <button (click)="spin(9)">3 Ans</button>
+  <button (click)="spin(10)">3 Ans et demi</button>
+  <button (click)="spin(11)">4 Ans</button>
+</div>-->
