@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build --prod --aot",
     "deploy": "ng build ngx-wheel --prod && cd dist/ngx-wheel && npm publish",
     "demo": "ng build --prod && firebase deploy",
     "build": "ng build --prod",
