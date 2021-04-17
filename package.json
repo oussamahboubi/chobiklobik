@@ -2,15 +2,15 @@
   "name": "angular-wheel",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "node --optimize_for_size --max_old_space_size=920 server.js",
+    "start": "node --optimize_for_size --max_old_space_size=460 server.js",
     "deploy": "ng build ngx-wheel --prod && cd dist/ngx-wheel && npm publish",
     "demo": "ng build --prod && firebase deploy",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod",
     "dev": "ng build ngx-wheel && ng s"
   },
   "private": true,
