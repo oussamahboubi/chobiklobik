@@ -6,7 +6,7 @@
     "start": "ng build --prod --aot",
     "deploy": "ng build ngx-wheel --prod && cd dist/ngx-wheel && npm publish",
     "demo": "ng build --prod && firebase deploy",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
