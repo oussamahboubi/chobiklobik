@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node --optimize_for_size --max_old_space_size=460 server.js",
+    "start": "node server.js",
     "deploy": "ng build ngx-wheel --prod && cd dist/ngx-wheel && npm publish",
     "demo": "ng build --prod && firebase deploy",
     "build": "ng build --prod",
